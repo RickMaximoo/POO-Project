@@ -5,7 +5,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoBd {
-    private static final String URL = "jdbc:mysql://localhost:3306/sys_pedidos?useSSL=false";
+    private static final String URL =
+  "jdbc:mysql://localhost:3306/sys_pedidos"
+  + "?useSSL=false"
+  + "&allowPublicKeyRetrieval=true"
+  + "&serverTimezone=UTC";
     private static final String USER = "root";  
     private static final String PASS = "Rickelme0512";    
 
